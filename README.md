@@ -1,1 +1,1 @@
-# assignment1
+# Maria's Build-a-Bear project
