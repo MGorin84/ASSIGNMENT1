@@ -1,4 +1,4 @@
-
+require "colorize"
 class PlushToys
     attr_accessor :kind, :name, :colour, :accessories, :outfit
    
@@ -11,16 +11,13 @@ class PlushToys
    end
 
    def hello
-    puts "Hello! I am #{name} the #{colour.downcase} #{kind}. I am wearing a #{outfit} outfit  with my #{accessories[0]} and #{accessories[1]}"
+    puts ("Hello! I am #{name} the #{colour.downcase} #{kind}. I am wearing a #{outfit} outfit  with my #{accessories[0]} and #{accessories[1]}").colorize(:blue)
    end
 
    def birth_certificate
-    date = Date.new
-
-    File.write("bc.txt", "#{name} the #{kind} Born on " + date.to_s)
+    time = Time.new
+    File.write("bc.txt", "#{name} the #{kind} Born on " + time.ctime.to_s)
    end
-
-
 end
 
   
