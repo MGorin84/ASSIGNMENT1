@@ -41,19 +41,18 @@ end
 choice_of_accessories = prompt.multi_select("Would you like to add some accessories? You can choose a few!!", %w(Backpack Umbrella Cap Headphones Sunglasses Glasses))
 
 accessories = choice_of_accessories
-puts accessories
+name = 0
+while name == 0
 puts ("Great! Almost there! Lets name your new friend! What would it be?").colorize(:green)
-
-name = gets.chomp
-if name.length < 12
-    puts ("#{name} suit your #{kind} so much!!!").colorize(:red)
-else
-    puts ("#{name} is a bit long. Please choose a shorter one!") 
-    
-
-    
+choice_of_name = gets.chomp
+    case choice_of_name.length
+    when  0..15
+            name = choice_of_name
+            puts ("#{name} suit your #{kind} so much!!!").colorize(:red)
+    else
+            puts ("#{name} is a bit long. Please choose a shorter one!") 
+    end
 end
-
 
 your_toy = PlushToys.new(kind, name, colour, outfit, accessories)
 puts artii.asciify("Yay!").colorize(:red)
