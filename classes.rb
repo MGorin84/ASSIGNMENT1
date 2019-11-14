@@ -7,11 +7,11 @@ class PlushToys
     @name = name
     @colour = colour
     @outfit = outfit
-    @accessories = []
+    @accessories = accessories
    end
 
    def hello
-    puts ("Hello! I am #{name} the #{colour.downcase} #{kind}. I am wearing a #{outfit} outfit  with my #{accessories[0]} and #{accessories[1]}").colorize(:blue)
+    puts ("Hello! I am #{@name} the #{@colour.downcase} #{@kind}. I am wearing a #{@outfit} outfit with my #{@accessories[0]} and #{@accessories[1]}").colorize(:blue)
    end
 
    def birth_certificate

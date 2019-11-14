@@ -10,10 +10,11 @@ puts artii.asciify("Welcome!").colorize(:red)
 puts "Welcome to Build-a-Bear workshop! Let's start creating!".colorize(:red)
 puts "Let's begin with choosing your fluffy friend?".colorize(:green)
 
-choice_of_animal = prompt.select("Please select one you like most!", %w(Bear Bunny Unicorn))
+choice_of_animal = prompt.select("Please select one you like most!", %w(Bear Bunny Unicorn Kitten Puppy Giraffe Hippo))
 kind = choice_of_animal.downcase
- 
-choice_of_colour = prompt.select("What colour would you like your #{kind} to be?", %w(Red Blue Yellow White Black Brown Green Pink Rainbow))
+colours = ["red".colorize(:red), "blue".colorize(:blue), "yellow".colorize(:yellow), "white".colorize(:white), "black".colorize(:black).on_white, "pink".colorize(:fuchsia), "green".colorize(:green), "purple".colorize(:magenta), "rainbow".colorize(:multicolor)] 
+
+choice_of_colour = prompt.select("What colour would you like your #{kind} to be?", colours)
 colour = choice_of_colour.downcase
 
 puts ("Yay! You have a #{colour} #{kind} now!").colorize(:red)
@@ -28,8 +29,8 @@ answer = gets.chomp.downcase
     outfit = choice_of_outfit
     puts "Wow! Your #{kind} is a #{outfit}!!!"
     elsif answer == "n"
-    choice_of_outfit = prompt.select("Ok! Let's choose what your #{kind} will wear then. What will you choose?", %w(Dress Overalls))
-    outfit_colour = prompt.select("What colour #{choice_of_outfit}?", %w(Red Blue Yellow White Black Brown Green Pink )) 
+    choice_of_outfit = prompt.select("Ok! Let's choose what your #{kind} will wear then. What will you choose?", %w(dress overalls))
+    outfit_colour = prompt.select("What colour #{choice_of_outfit}?", colours) 
     outfit = outfit_colour + " " + choice_of_outfit
     puts "Great! #{outfit} it is!"
     else
@@ -37,20 +38,21 @@ answer = gets.chomp.downcase
     output = 0
     end
 end
-
-choice_of_accessories = prompt.multi_select("Would you like to add some accessories? You can choose a few!!", %w(Backpack Umbrella Cap Headphones Sunglasses Glasses))
+accessories = []
+choice_of_accessories = prompt.multi_select("Would you like to add some accessories? You can choose two!!", %w(backpack umbrella cap headphones sunglasses glasses))
 
 accessories = choice_of_accessories
+puts  ("Great! Almost there!").colorize(:red)
 name = 0
 while name == 0
-puts ("Great! Almost there! Lets name your new friend! What would it be?").colorize(:green)
+puts ("Lets name your new friend! What would it be?").colorize(:green)
 choice_of_name = gets.chomp
     case choice_of_name.length
     when  0..15
             name = choice_of_name
             puts ("#{name} suit your #{kind} so much!!!").colorize(:red)
     else
-            puts ("#{name} is a bit long. Please choose a shorter one!") 
+            puts ("#{choice_of_name} is a bit long. Please choose a shorter one!").colorize(:red)
     end
 end
 
