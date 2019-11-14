@@ -50,6 +50,7 @@ puts "#{name} suit your #{kind} so much!!!"
 your_toy = PlushToys.new(kind, name, colour, outfit, accessories)
 
 your_toy.hello
+your_toy.birth_certificate
 
 
 

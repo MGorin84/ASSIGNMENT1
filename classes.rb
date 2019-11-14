@@ -15,7 +15,9 @@ class PlushToys
    end
 
    def birth_certificate
+    date = Date.new
 
+    File.write("bc.txt", "#{name} the #{kind} Born on " + date.to_s)
    end
 
 
