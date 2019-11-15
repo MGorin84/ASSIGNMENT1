@@ -12,7 +12,7 @@
 *Made an array for colour selection to avoid repetition in a code
 *Wrote a test for class method
 *Corrected date and time format for a class method
-*Implemented ose of ARGV 
+*Implemented use of ARGV 
 
 
 
