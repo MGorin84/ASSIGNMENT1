@@ -34,12 +34,9 @@ answer = gets.chomp.downcase
         puts "\nOoops. Try again!\n".colorize(:red)
     end
 end 
-
 choice_of_accessories = prompt.multi_select("Let's choose some accessories for your friend! You can choose as many as you like!", %w(backpack umbrella cap headphones sunglasses glasses))  
 accessories = choice_of_accessories
-
 puts  ("\nGreat! Almost there!").colorize(:red)
-
 name = 0
 while name == 0
 puts ("\nLets name your new friend! What would it be?").colorize(:green)
@@ -52,10 +49,8 @@ choice_of_name = gets.chomp
             puts ("\nOoops!#{choice_of_name} is a bit long. Please choose a shorter one!\n").colorize(:red)
     end
 end
-
 your_toy = PlushToys.new(kind, name, colour, outfit, accessories)
 puts artii.asciify("Yay!").colorize(:red)
-
 your_toy.hello
 your_toy.birth_certificate
 

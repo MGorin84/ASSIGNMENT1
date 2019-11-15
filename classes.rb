@@ -26,7 +26,8 @@ class PlushToys
    def birth_certificate
     begin
         time = Time.new
-        File.write("bc.txt", "#{name} the #{kind} Born on " + time.ctime.to_s)
+        File.write("bc.txt", "\n#{name} the #{kind} \nBorn on " + time.ctime.to_s)
+        puts File.read("bc.txt")
     rescue
         puts "Failed to write in a file\n"
     end

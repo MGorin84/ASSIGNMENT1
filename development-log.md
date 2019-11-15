@@ -8,7 +8,11 @@
 
 ### 15/11/2019
 
-*Implemented error handling inside a Class Method
+*Implemented error handling inside a class method
+*Made an array for colour selection to avoid repetition in a code
+*
+
+
 
 
 
