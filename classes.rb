@@ -11,15 +11,15 @@ class PlushToys
    end
 
    def hello
-    puts ("Hello! I am #{@name} the #{@colour.downcase} #{@kind}!").colorize(:blue)
+    puts ("\nHello! I am #{@name} the #{@colour.downcase} #{@kind}!").colorize(:blue)
         if accessories.length == 2
-            puts ("I am wearing a #{@outfit} outfit with my #{@accessories[0]} and #{@accessories[1]}").colorize(:blue)
+            puts ("I am wearing a #{@outfit} outfit with my #{@accessories[0]} and #{@accessories[1]}.").colorize(:blue)
         elsif accessories.length == 1
             puts ("I am wearing a #{@outfit} outfit with my #{@accessories[0]}!").colorize(:blue)
         elsif accessories.length == 0 
             puts("I am wearing a #{@outfit} outfit!")
         else 
-            puts ("I am wearing a #{@outfit} outfit with my favourite accessories").colorize(:blue)
+            puts ("I am wearing a #{@outfit} outfit with my favourite accessories.").colorize(:blue)
         end
     end
 
@@ -28,7 +28,7 @@ class PlushToys
         time = Time.new
         File.write("bc.txt", "#{name} the #{kind} Born on " + time.ctime.to_s)
     rescue
-        puts "Failed to write in a file"
+        puts "Failed to write in a file\n"
     end
    end
 end
