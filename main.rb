@@ -25,23 +25,23 @@ until outfit != 0
 puts ("We have some special outfits in store. Would you like your #{kind} to wear one?") + (" Y or N?").colorize(:green)
 answer = gets.chomp.downcase
     if answer == "y"
-    choice_of_outfit = prompt.select("Great! Now choose a special outfit", %w( Doctor Firefigter Policeman Nurse Pilot Taxidriver Builder))
-    outfit = choice_of_outfit
-    puts "Wow! Your #{kind} is a #{outfit}!!!"
+        choice_of_outfit = prompt.select("Great! Now choose a special outfit", %w( Doctor Firefigter Policeman Nurse Pilot Taxidriver Builder))
+        outfit = choice_of_outfit
+        puts "Wow! Your #{kind} is a #{outfit}!!!"
     elsif answer == "n"
-    choice_of_outfit = prompt.select("Ok! Let's choose what your #{kind} will wear then. What will you choose?", %w(dress overalls))
-    outfit_colour = prompt.select("What colour #{choice_of_outfit}?", colours) 
-    outfit = outfit_colour + " " + choice_of_outfit
-    puts "Great! #{outfit} it is!"
+        choice_of_outfit = prompt.select("Ok! Let's choose what your #{kind} will wear then. What will you choose?", %w(dress overalls))
+        outfit_colour = prompt.select("What colour #{choice_of_outfit}?", colours) 
+        outfit = outfit_colour + " " + choice_of_outfit
+        puts "Great! #{outfit} it is!"
     else
-    puts "Invalid input"
-    output = 0
+        puts "Invalid input"
+        outfit = 0
     end
-end
-accessories = []
-choice_of_accessories = prompt.multi_select("Would you like to add some accessories? You can choose two!!", %w(backpack umbrella cap headphones sunglasses glasses))
+end 
 
+choice_of_accessories = prompt.multi_select("Let's choose some accessories for your friend! You can choose as many as you like!", %w(backpack umbrella cap headphones sunglasses glasses))    
 accessories = choice_of_accessories
+
 puts  ("Great! Almost there!").colorize(:red)
 name = 0
 while name == 0
