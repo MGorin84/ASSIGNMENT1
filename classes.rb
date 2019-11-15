@@ -34,7 +34,7 @@ class PlushToys
     end
    end
 
-   def read_bc
+   def read_birth_certificate
     File.read(@name+".txt")
    end
 end
