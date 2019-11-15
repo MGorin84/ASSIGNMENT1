@@ -3,12 +3,13 @@ require "date"
 class PlushToys
     attr_accessor :kind, :name, :colour, :accessories, :outfit
    
-   def initialize(kind, name, colour, outfit, accessories)
+   def initialize(kind, name, colour, outfit, accessories, user_full_name)
     @kind = kind
     @name = name
     @colour = colour
     @outfit = outfit
     @accessories = accessories
+    @user_full_name = user_full_name
    end
 
    def hello
@@ -27,7 +28,7 @@ class PlushToys
    def birth_certificate
     begin
         time = Time.new
-        File.write(@name+".txt", "\n#{name} the #{kind} \nBorn on " + time.strftime("%A").to_s + " the " + time.strftime("%d").to_s + " of " + time.strftime("%B").to_s + " " + time.year.to_s)
+        File.write(@name+".txt", "\n#{name} the #{kind} \nCreated on " + time.strftime("%A").to_s + " the " + time.strftime("%d").to_s + " of " + time.strftime("%B").to_s + " " + time.year.to_s + "\nby #{@user_full_name}")
     rescue
         puts "Failed to write in a file\n"
     end

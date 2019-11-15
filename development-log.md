@@ -10,7 +10,8 @@
 
 *Implemented error handling inside a class method
 *Made an array for colour selection to avoid repetition in a code
-*
+*Wrote a test for class method
+*Corrected date and time format for a class method 
 
 
 
