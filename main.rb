@@ -53,7 +53,7 @@ your_toy = PlushToys.new(kind, name, colour, outfit, accessories)
 puts artii.asciify("Yay!").colorize(:red)
 your_toy.hello
 your_toy.birth_certificate
-
+puts your_toy.read_bc
 
 
     

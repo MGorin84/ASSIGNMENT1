@@ -1,4 +1,5 @@
 require "colorize"
+require "date"
 class PlushToys
     attr_accessor :kind, :name, :colour, :accessories, :outfit
    
@@ -26,11 +27,14 @@ class PlushToys
    def birth_certificate
     begin
         time = Time.new
-        File.write("bc.txt", "\n#{name} the #{kind} \nBorn on " + time.ctime.to_s)
-        puts File.read("bc.txt")
+        File.write(@name+".txt", "\n#{name} the #{kind} \nBorn on " + time.strftime("%A").to_s + " the " + time.strftime("%d").to_s + " of " + time.strftime("%B").to_s + " " + time.year.to_s)
     rescue
         puts "Failed to write in a file\n"
     end
+   end
+
+   def read_bc
+    File.read(@name+".txt")
    end
 end
 
