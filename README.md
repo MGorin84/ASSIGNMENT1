@@ -68,7 +68,7 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 
 ## Control Flow Diagram
 
-[my link](file:./Build-a-Bear.pdf)
+[my link](file:./Build-a-Bear-flowchart.pdf)
 
 ## Manual testing
 
