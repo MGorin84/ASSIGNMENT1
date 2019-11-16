@@ -2,7 +2,6 @@ require "colorize"
 require "date"
 class PlushToys
     attr_accessor :kind, :name, :colour, :accessories, :outfit
-   
    def initialize(kind, name, colour, outfit, accessories, user_full_name)
     @kind = kind
     @name = name

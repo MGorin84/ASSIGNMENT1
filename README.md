@@ -7,8 +7,6 @@ It is made as a fun activity and can also be used in real workshops to collect u
 
 The application is made for kids and everyone who loves plush animals.
 
-
-
 ## Features
 
 * ##### Choice of colour and accessories. 
@@ -74,13 +72,4 @@ There is one test method created for `birth_certificate` class method.
 It is designed to check if the method creates a new file with the name of the toy, initialized in a class.
 In order for the test method to work, a `test_toy` is initialized in it. 
 The test method calls `birth_certificate` on `test_toy` and then checks if the text file with a given name exists
-
-
-
-
-
-
-
-
- 
 

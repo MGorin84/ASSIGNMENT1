@@ -21,9 +21,3 @@
 * Completed software implementation plan
 * Saved a flowchart
 * 
-
-
-
-
-
-
