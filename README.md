@@ -20,7 +20,7 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 
 The program needs to collect user's full name to run. It is collected through ARGV and it is used at the end to generate a "birth certificate" file.
 
-It continues to collect data giving the user maltiple choice to select or asking to type in data. In case of asking for user's input there is a clear explanation of what kind of data the program needs to continue to run.
+It continues to collect data giving the user multiple choice to select or asking to type in data. In case of asking for user's input there is a clear explanation of what kind of data the program needs to continue to run.
 
 There are several points when user's data doesn't get accepted if it is invalid in which case it returns the user to the point of expecting input. 
 
@@ -70,6 +70,12 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 
 There is one test method created for `birth_certificate` class method. 
 It is designed to check if the method creates a new file with the name of the toy, initialized in a class.
+
 In order for the test method to work, a `test_toy` is initialized in it. 
+
 The test method calls `birth_certificate` on `test_toy` and then checks if the text file with a given name exists
+
+The test was run a few times during the development. Passed each time
+
+
 

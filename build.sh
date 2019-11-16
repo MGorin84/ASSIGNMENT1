@@ -1,10 +1,9 @@
 #!/bin/sh
-
 echo "Hello!"
 # make a disc folder
-mkdir -p folder
+mkdir -p build_a_bear
 #copy code into the folder
-cp main.rb classes.rb folder
+cp main.rb classes.rb build_a_bear
 #install gems
 gem install colorize
 gem install tty-prompt
