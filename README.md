@@ -20,6 +20,25 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 
 ## User interaction plan
 
+The program needs to collect user's full name to run. It is collected through ARGV and it is used at the end to generate a "birth certificate" file.
+
+It continues to collect data giving the user maltiple choice to select or asking to type in data. In case of asking for user's input there is a clear explanation of what kind of data the program needs to continue to run.
+
+There are several points when user's data doesn't get accepted if it is invalid in which case it returns the user to the point of expecting input. 
+
+As a result the program generates a file with the same name as toy's which is chosen by the user. In case of an error of failing to print a file, it will display an error message and stop.
+
+## Help
+
+##### Steps to install the application
+
+* Install Ruby version 2.5.1 if not installed already
+* There is a `build.sh` file containing a list of commands to install required gems and start the application. Run it through the terminal
+
+
+
+
+
 
  
 

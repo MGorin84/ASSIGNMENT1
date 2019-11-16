@@ -14,6 +14,11 @@
 *Corrected date and time format for a class method
 *Implemented use of ARGV 
 
+### 16/11/2019
+
+*Wrote user interaction plan
+*
+
 
 
 
