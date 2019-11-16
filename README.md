@@ -39,7 +39,16 @@ As a result the program generates a file with the same name as toy's which is ch
 
 ## Implementation plan
 
-##### The application will include following features
+##### Classes and methods
+
+* There is one class called `PushToys` used in the application, which provides a template for the data collected from the user. There are 5 attributes of the class.
+When user makes a selection it gets assigned to a variable. That variable is used as an attribute while initializing a new toy when all the choices are made.
+* There are three class methods.
+`hello` method prints out a message from a new toy using class attributes  
+`birth_certificate` method creates a file and prints "Birth certificate" stating names of the toy and the user with the date of its creation. It uses class attributes and `Time` class to get current date.
+`read_birth_certificate` reads the "Birth certificate" file 
+
+##### The application includes following features
 1. ##### Choice of colour and accessories. 
 There is a choice of colour and a choice of multiple accessories. There is a list of colours offering one selection and a multiple  choice list of accessories.
 * An array containing colours is used foe colour selection,`colorize` gem is used for a better display of colours
@@ -56,8 +65,8 @@ For the outfit there is a special option with a selection ot special outfits fea
 When all the choices are made the brand new toy will be given a "Birth certificate" stating its name, user's name and a date of its creation. Birth certificate is printed in a separate file with the same name as the toy's.
 * There is a class method creating a text file and writing "birth certificate" in it.
 * "Birth certificate" contains the name and the kind of a plush animal, chosen by user
-* "Birth certificate" contains the date toy was created, which is generated using `Time` class and formated in a user friendly way.
-* "Birth certificate" also contains user's name which is taken at the beginning of the program throug the terminal using `ARGV`
+* "Birth certificate" contains the date toy was created, which is generated using `Time` class and formatted in a user friendly way.
+* "Birth certificate" also contains user's name which is taken at the beginning of the program through the terminal using `ARGV`
 
 
 
