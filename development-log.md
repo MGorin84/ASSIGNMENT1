@@ -20,4 +20,3 @@
 * Wrote Help plan 
 * Completed software implementation plan
 * Saved a flowchart
-* 
