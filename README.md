@@ -1,4 +1,4 @@
-# Maria's Build-A-Bear project 
+# Build-A-Bear project 
 ## Statement of Purpose and Scope
 
 Build-a-Bear application is designed for creating personalized plush toys. It is an interactive program allowing user to choose a kind of animal, colour, outfit, accessories for custom made toy and name it. As a result it generates a message from the toy and a "Birth certificate", stating the names of the toy and its owner with the date of its creation.
@@ -67,6 +67,15 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 * "Birth certificate" contains the name and the kind of a plush animal, chosen by user
 * "Birth certificate" contains the date toy was created, which is generated using `Time` class and formatted in a user friendly way.
 * "Birth certificate" also contains user's name which is taken at the beginning of the program through the terminal using `ARGV`
+
+## Manual testing
+
+There is one test method created for `birth_certificate` class method. 
+It is designed to check if the method creates a new file with the name of the toy, initialized in a class.
+In order for the test method to work, a `test_toy` is initialized in it. 
+The test method calls `birth_certificate` on `test_toy` and then checks if the text file with a given name exists
+
+
 
 
 
