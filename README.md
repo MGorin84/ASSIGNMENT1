@@ -66,6 +66,10 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 * "Birth certificate" contains the date toy was created, which is generated using `Time` class and formatted in a user friendly way.
 * "Birth certificate" also contains user's name which is taken at the beginning of the program through the terminal using `ARGV`
 
+## Control Flow Diagram
+
+[my link](file:./Build-a-Bear.pdf)
+
 ## Manual testing
 
 There is one test method created for `birth_certificate` class method. 
