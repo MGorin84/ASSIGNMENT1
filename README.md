@@ -34,6 +34,30 @@ As a result the program generates a file with the same name as toy's which is ch
 
 * Install Ruby version 2.5.1 if not installed already
 * There is a `build.sh` file containing a list of commands to install required gems and start the application. Run it through the terminal
+* Run `main.rb` followed by your first name and your last name. The program won't run without it
+* When it is finished running you can find "Birth certificate" in a text file with the same name as you chose for your toy
+
+## Implementation plan
+
+##### The application will include following features
+1. ##### Choice of colour and accessories. 
+There is a choice of colour and a choice of multiple accessories. There is a list of colours offering one selection and a multiple  choice list of accessories.
+* An array containing colours is used foe colour selection,`colorize` gem is used for a better display of colours
+* `tty-prompt`gem used to get user choices.
+`prompt.select` for colours and `prompt.multi_select` for accessories
+    
+2. ##### Outfit options
+For the outfit there is a special option with a selection ot special outfits featuring different occupations or a simple option with a choice of either a dress or an overall followed by a choice of colour
+* There is an option of a special outfit placed in a user input question, expecting "y" or "n" response. The program loops in case of invalid input until the decision is made and then does to the next part.
+* In case of simple outfit option, the program gets a colour selection, creates an outfit and goes to the next part
+* The choice of outfit is reflected in a message from the toy generated at the end of the program 
+
+3. ##### Printed "Birth Certificate"
+When all the choices are made the brand new toy will be given a "Birth certificate" stating its name, user's name and a date of its creation. Birth certificate is printed in a separate file with the same name as the toy's.
+* There is a class method creating a text file and writing "birth certificate" in it.
+* "Birth certificate" contains the name and the kind of a plush animal, chosen by user
+* "Birth certificate" contains the date toy was created, which is generated using `Time` class and formated in a user friendly way.
+* "Birth certificate" also contains user's name which is taken at the beginning of the program throug the terminal using `ARGV`
 
 
 
