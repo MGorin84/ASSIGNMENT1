@@ -68,7 +68,7 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 
 ## Control Flow Diagram
 
-[my link](file:./Build-a-Bear-flowchart.pdf)
+[my link](file:/home/maria/coder-academy/term1/assignment1/Build-a-Bear-flowchart.pdf)
 
 ## Manual testing
 
@@ -80,6 +80,4 @@ In order for the test method to work, a `test_toy` is initialized in it.
 The test method calls `birth_certificate` on `test_toy` and then checks if the text file with a given name exists
 
 The test was run a few times during the development. Passed each time
-
-
 
