@@ -6,6 +6,8 @@
 * Wrote program code using loops, methods and gems
 * Created development-log file
 
+![alt text](./)
+
 ### 15/11/2019
 
 * Implemented error handling inside a class method
