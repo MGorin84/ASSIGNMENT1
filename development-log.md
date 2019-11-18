@@ -6,7 +6,8 @@
 * Wrote program code using loops, methods and gems
 * Created development-log file
 
-![alt text](./)
+![alt text](./13.11.2019.png)
+![alt text](./14.11.2019(2).png)
 
 ### 15/11/2019
 
@@ -16,9 +17,15 @@
 * Corrected date and time format for a class method
 * Implemented use of ARGV 
 
+![alt text](./15.11.2019(2).png)
+![alt text](./15.11.2019(3).png)
+
 ### 16/11/2019
 
 * Wrote user interaction plan
 * Wrote Help plan 
 * Completed software implementation plan
 * Saved a flowchart
+
+![alt text](./16.11.2019(1).png)
+![alt text](./16.11.2019(3).png)
