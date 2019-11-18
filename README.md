@@ -68,8 +68,8 @@ When all the choices are made the brand new toy will be given a "Birth certifica
 
 ## Control Flow Diagram
 
-[my link](file:/home/maria/coder-academy/term1/assignment1/Build-a-Bear-flowchart.pdf)
-
+[my link](./Build-a-Bear-flowchart.pdf)
+![alt text](.jpg)
 ## Manual testing
 
 There is one test method created for `birth_certificate` class method. 

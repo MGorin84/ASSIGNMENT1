@@ -10,5 +10,5 @@ gem install tty-prompt
 gem install artii
 #run the program
 echo "Please type your first name and your last name following the next command" 
-ruby main.rb #type your first name and last name here
+echo "ruby main.rb 'first name' 'last name'"
 
