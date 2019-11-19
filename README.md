@@ -79,4 +79,4 @@ In order for the test method to work, a `test_toy` is initialized in it.
 
 The test method calls `birth_certificate` on `test_toy` and then checks if the text file with a given name exists
 
-The test was run a few times during the development. Passed each time
+The test was run a few times during the development. Passed each time.
