@@ -10,14 +10,12 @@ if ARGV.length < 2
     exit
 else
 end
-puts artii.asciify("Welcome!\n").colorize(:red)
 
+puts artii.asciify("Welcome!\n").colorize(:red)
 user_first_name = ARGV[0]
 user_last_name = ARGV[1]
 user_full_name = user_first_name + " " + user_last_name
-
 puts "\nHello #{user_first_name} and welcome to Build-a-Bear workshop!\nYou are ready to start creating!\n".colorize(:green)
-
 puts "Let's begin with choosing your fluffy friend?\n".colorize(:red)
 choice_of_animal = prompt.select("Please select one you like most!", %w(Bear Bunny Unicorn Kitten Puppy Giraffe Hippo Mouse))
 kind = choice_of_animal.downcase
@@ -28,7 +26,6 @@ colour = choice_of_colour.downcase
 puts ("\nYay! You have a #{colour} #{kind} now!\n").colorize(:red)
 
 puts ("Now it's time to choose an oufit for your #{kind}!\n").colorize(:green)
-
 outfit = 0
 until outfit != 0
 puts ("We have some special outfits in store. Would you like your #{kind} to wear one?") + (" Y or N?").colorize(:green)
@@ -63,6 +60,7 @@ choice_of_name = STDIN.gets.chomp
             puts ("\nOoops!#{choice_of_name} is a bit long. Please choose a shorter one!\n").colorize(:red)
     end
 end
+
 your_toy = PlushToys.new(kind, name, colour, outfit, accessories, user_full_name)
 puts artii.asciify("Yay!").colorize(:red)
 your_toy.hello
